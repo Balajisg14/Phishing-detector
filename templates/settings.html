@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar">🛡️</div>
+            <h3>Security Admin</h3>
+            <p>phishing@system.ai</p>
+        </div>
+
+        <ul class="menu">
+            <li onclick="location.href='/'">Dashboard</li>
+            <li onclick="location.href='/'">Scan URL</li>
+            <li onclick="location.href='/reports'">Reports</li>
+            <li onclick="location.href='/analytics'">Analytics</li>
+            <li class="active">Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <h1>Settings</h1>
+
+        <div class="scan-box">
+            <h2>System Settings</h2>
+
+            <ul style="color:#ddd;">
+                <li>Model: Random Forest</li>
+                <li>Confidence Threshold: 70%</li>
+                <li>Reports Storage: CSV</li>
+                <li>Status: Active</li>
+            </ul>
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

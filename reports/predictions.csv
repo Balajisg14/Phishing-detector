@@ -1,0 +1,8 @@
+Time,URL,Result,Confidence
+2026-01-30 11:29:49,https://google.com,Legitimate,73.0
+2026-01-30 11:30:03,www.linkedin.com/in/balaji-sg-97b400295,Phishing,87.0
+2026-01-30 11:47:11,accounts_login.cz/google.com,Phishing,59.0
+2026-01-30 11:47:24,Balaji_14,Phishing,52.0
+2026-02-04 14:28:19,http://flipkart.com,Phishing,52.0
+2026-02-04 14:28:32,https://google.com,Legitimate,73.0
+2026-02-04 14:28:44,http://flipkart.com,Phishing,52.0

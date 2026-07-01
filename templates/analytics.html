@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar">🛡️</div>
+            <h3>Security Admin</h3>
+            <p>phishing@system.ai</p>
+        </div>
+
+        <ul class="menu">
+            <li onclick="location.href='/'">Dashboard</li>
+            <li onclick="location.href='/'">Scan URL</li>
+            <li onclick="location.href='/reports'">Reports</li>
+            <li class="active">Analytics</li>
+            <li onclick="location.href='/settings'">Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <h1>Analytics</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h4>Total Scans</h4>
+                <p>Auto from reports</p>
+            </div>
+            <div class="card">
+                <h4>Phishing Rate</h4>
+                <p>Calculated</p>
+            </div>
+            <div class="card">
+                <h4>Legitimate Rate</h4>
+                <p>Calculated</p>
+            </div>
+        </div>
+
+        <p style="margin-top:20px;color:#aaa;">
+            📊 Advanced charts can be added here.
+        </p>
+    </main>
+
+</div>
+
+</body>
+</html>

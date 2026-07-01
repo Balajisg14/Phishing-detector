@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Scan URL</h1>
+
+<form method="POST" class="scan-form">
+    <input type="text" name="url" placeholder="Enter website URL" required>
+    <button type="submit">Scan Now</button>
+</form>
+
+{% if prediction %}
+<div class="result {{ prediction|lower }}">
+    <h3>{{ prediction }}</h3>
+    <p>Confidence: {{ confidence }}%</p>
+</div>
+{% endif %}
+
+{% endblock %}

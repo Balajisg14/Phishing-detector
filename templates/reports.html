@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Scan Reports</h1>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>URL</th>
+        <th>Result</th>
+        <th>Confidence</th>
+    </tr>
+
+    {% for row in data %}
+    <tr>
+        <td>{{ row.Time }}</td>
+        <td>{{ row.URL }}</td>
+        <td>{{ row.Result }}</td>
+        <td>{{ row.Confidence }}%</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

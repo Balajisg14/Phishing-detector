@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar">🛡️</div>
+            <h3>Security Admin</h3>
+            <p>phishing@system.ai</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/scan">Scan URL</a></li>
+            <li><a href="/reports">Reports</a></li>
+            <li><a href="/analytics">Analytics</a></li>
+            <li><a href="/settings">Settings</a></li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+</div>
+
+</body>
+</html>

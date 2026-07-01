@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #020617;
+    padding: 20px;
+    height: 100vh;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    font-size: 40px;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    padding: 30px;
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.scan-form input {
+    width: 300px;
+    padding: 10px;
+}
+
+.scan-form button {
+    padding: 10px 15px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.result.phishing {
+    background: #7f1d1d;
+}
+
+.result.legitimate {
+    background: #14532d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #334155;
+    padding: 10px;
+}
+.table-container {
+    background: #0f1a2b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+thead {
+    background: #111c30;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #1f2a44;
+}
+
+.url {
+    color: #6dd5fa;
+    word-break: break-all;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.badge.phishing {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.badge.legitimate {
+    background: #22c55e;
+    color: #fff;
+}
